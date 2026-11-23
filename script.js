@@ -29,22 +29,6 @@
       if (event.matches) closeMenu();
     });
   }
-  const calendarButton = document.querySelector('#load-tcg-calendar');
-  const calendarContainer = document.querySelector('#calendar-embed');
-  if (calendarButton && calendarContainer) {
-    calendarButton.addEventListener('click', () => {
-      if (calendarContainer.querySelector('iframe')) return;
-      const iframe = document.createElement('iframe');
-      iframe.src = 'https://www.tcgevents.net/profile/17413627470044';
-      iframe.title = 'DufBros – aktuelle Turniere bei TCGevents';
-      iframe.loading = 'lazy';
-      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-      calendarContainer.hidden = false;
-      calendarContainer.appendChild(iframe);
-      calendarButton.textContent = 'Kalender unten geöffnet';
-      calendarButton.disabled = true;
-    });
-  }
   document.querySelectorAll('[data-load-video]').forEach(button => {
     button.addEventListener('click', () => {
       const wrapper = button.closest('[data-video]');
