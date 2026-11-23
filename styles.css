@@ -60,3 +60,83 @@
 @media(max-width:1000px){.category-card{min-height:325px}.category-card h3{font-size:37px}.category-card__image{top:46px;bottom:77px;left:12px;right:12px}.category-card__link{display:none}.upcoming-section{padding:80px 0}.events-calendar-info{flex-wrap:wrap}.events-calendar-info .btn{width:100%}}
 @media(max-width:740px){.brand__original{width:135px;height:57px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.category-card{grid-column:auto!important;min-height:285px;padding:13px}.category-card__image{top:38px;bottom:68px;left:8px;right:8px}.category-card h3{font-size:34px}.category-card__bottom small,.category-card__top{font-size:8px}.upcoming-section{padding:65px 0}.upcoming-intro{flex-direction:column;align-items:start}.upcoming-intro h2{font-size:70px}.events-calendar-info{padding:22px;gap:14px}.events-calendar-info__icon{font-size:38px}.events-calendar-info strong{font-size:27px}.event-feed-footer{flex-direction:column;align-items:start;gap:12px}.event-feed-footer>a{white-space:normal}}
 @media(max-width:420px){.category-card{min-height:243px}.category-card h3{font-size:29px}.category-card__image{bottom:60px}.upcoming-intro h2{font-size:57px}}
+
+
+/* Friendly local-game-store refresh (Nov 2026): warm ivory + teal + coral. */
+:root{--bg:#fffaf3;--paper:#fff;--ink:#233339;--muted:#647076;--purple:#087b80;--coral:#e66553;--line:#e8e9e4}
+body{background:var(--bg)}
+.site-header{background:rgba(255,250,243,.97);border-bottom-color:#e3e8e2}
+.topbar{background:#09696e}
+.brand__original{width:145px;height:65px}
+.hero{background:linear-gradient(112deg,#fff4e6 0%,#fff7ee 53%,#e8f7f2 100%)}
+.hero:before{background:radial-gradient(circle at 65% 40%,rgba(114,209,197,.26),transparent 69%)}
+.hero__grid{grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:clamp(24px,4.5vw,65px)}
+.hero__copy{min-width:0;container-type:inline-size}
+.hero .hero__title{font-size:clamp(49px,15cqw,116px);line-height:1.02;letter-spacing:-.018em;font-weight:900;margin:29px 0 26px;text-transform:uppercase;max-width:100%;overflow:visible}
+.hero .hero__line{display:block;white-space:nowrap;color:var(--ink)}
+.hero .hero__line--accent{color:var(--purple)}
+.hero .hero__point{color:var(--coral)}
+.hero__intro{max-width:510px;color:#47575c;font-size:15px}
+.hero__image-wrap{border-color:#fff;box-shadow:0 20px 70px rgba(29,102,95,.13);background:#e7f4ef}
+.hero__image-badge{box-shadow:0 13px 35px rgba(38,83,76,.16)}
+.hero__image-icon{background:#def3e8;color:#137d75}
+.hero__sticker{background:#ffbc78;color:#263339}
+.hero__spark{color:var(--coral)}
+.hero__bottom{border-top-color:#e1e5dc;color:#65797a}
+.pill{color:#076e72;background:#e5f7ee;border-color:#b6e2d7}
+.micro-avatar{background:#ffd2b6;color:#9e4e3b}
+.quickfacts b{color:#087b80}
+.section h2{line-height:.97;letter-spacing:-.014em}
+.section h2 em,.upcoming-intro h2 em{color:#087b80}
+.overline,.visit-info__group>span,.feature__num{color:#087b80}
+.overline__line{background:#087b80}
+.category-card--pokemon{background:#fae8a5}
+.category-card--onepiece{background:#c4eee9}
+.category-card--yugioh{background:#e0e7f8}
+.category-card--magic{background:#f8d4bd}
+.category-card--digimon{background:#d7eec5}
+.category-card--diddl{background:#f6dbe7}
+.why-section{background:#f4faf5}
+.feature{background:#fff;border-color:#e0e9e3}
+.events-section{background:#e6f5ef}
+.events-photo{background:#b6dfd5;box-shadow:0 14px 44px #186a6130}
+.events-photo__tag{background:#ffd580}
+.events-copy h2{line-height:.91}
+.events-pills span{background:#fff;border-color:#cce5da}
+.social-section{background:#fff}
+.instagram-card{background:linear-gradient(135deg,#ffe4d1 0%,#f7dbd4 48%,#d5eee7 100%)}
+.instagram-card__bottom{border-top-color:#dcada5}
+.cardmarket-banner{background:#f8ebbc}
+.cardmarket-banner__star{color:#b6803b}
+.cardmarket-banner .overline,.cardmarket-banner h2 em{color:#865b27}
+.cardmarket-banner p{color:#755d43}
+.upcoming-section{background:#fffdf9}
+.upcoming-intro h2{line-height:.98}
+.events-calendar-info{background:#edf8f2;border-color:#cce8dc}
+.events-calendar-info__icon{color:#087b80}
+.calendar-embed{display:block;background:#fff;padding:14px;border:1px solid #d7e9e1;border-radius:18px;margin-top:16px}
+.calendar-embed iframe{width:100%;height:650px;border:0;background:#fff;border-radius:12px;display:block}
+.calendar-embed__fallback{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:16px 5px 2px}
+.calendar-embed__fallback p{font-size:11px;color:#697574;margin:0}
+.calendar-embed__fallback a{font-size:12px;color:var(--purple);font-weight:800;text-decoration:underline;text-underline-offset:4px}
+.visit-section{background:#fffaf3}
+.visit-socials a{background:#e4f5ee;color:#087b80}
+.closing{background:#087b80}
+.closing h2{line-height:.94}
+.closing h2 span{color:#ffd58e}
+.footer{background:#f4f4ed}
+@media(max-width:1000px){
+  .hero__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+  .hero .hero__title{font-size:clamp(49px,15cqw,116px)}
+}
+@media(max-width:740px){
+  .hero__grid{grid-template-columns:minmax(0,1fr);gap:0}
+  .hero__copy{padding-top:52px}
+  .hero .hero__title{font-size:clamp(49px,15cqw,110px);line-height:1.03;margin:27px 0 23px}
+  .calendar-embed{padding:8px}
+  .calendar-embed iframe{height:610px}
+  .events-calendar-info .btn{width:100%}
+}
+@media(max-width:430px){
+  .hero .hero__title{font-size:clamp(48px,15cqw,72px)}
+}
