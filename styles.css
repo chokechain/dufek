@@ -21,3 +21,42 @@
 @media(max-width:740px){.container{width:calc(100% - 36px)}.topbar__right{display:none}.topbar__inner{justify-content:center}.header-inner{height:72px}.mobile-nav:not([hidden]){top:72px}.hero__grid{grid-template-columns:1fr;gap:0}.hero__copy{padding:60px 0 15px}.hero h1{font-size:clamp(82px,17vw,130px);margin:28px 0}.hero__intro{font-size:14px}.hero__micro{margin-top:25px}.hero__media{padding:20px 16px 50px}.hero__image-wrap{height:390px}.hero__sticker{right:1px;top:0;width:95px;height:95px;font-size:18px}.hero__image-badge{bottom:20px;left:0}.hero__bottom{font-size:8px;gap:8px}.hero__bottom span:last-child{display:none}.quickfacts__inner{grid-template-columns:repeat(2,1fr)}.quickfacts__inner>div{padding:21px 10px;justify-content:flex-start;font-size:10px}.quickfacts__inner>div+div{border-left:0}.section{padding:70px 0}.section-header,.why-head{flex-direction:column;align-items:flex-start;gap:18px}.section h2{font-size:clamp(66px,12vw,95px)}.section-header>p,.why-head>p{max-width:550px}.category-grid{grid-template-columns:1fr 1fr;gap:10px}.category-card{grid-column:span 1;min-height:285px;padding:14px}.category-card:last-child{grid-column:span 1}.category-card__image{top:43px;bottom:63px;left:5%;right:5%}.category-card h3{font-size:35px}.category-card__top,.category-card__bottom small{font-size:8px}.feature-grid,.events-layout,.visit-layout{grid-template-columns:1fr}.feature-grid{gap:10px}.feature{padding:22px}.feature__icon{margin-bottom:20px}.events-layout{gap:35px}.events-photo{height:390px}.events-copy h2{font-size:140px}.social-grid{grid-template-columns:1fr}.instagram-card{min-height:340px}.instagram-card h3{font-size:75px}.cardmarket-banner__inner{flex-direction:column;align-items:flex-start;gap:19px}.cardmarket-banner .btn{margin-left:0}.visit-photo{min-height:380px}.visit-info{padding:20px}.closing h2{font-size:clamp(80px,13vw,140px)}.closing__inner>a{width:60px;height:60px;font-size:30px}.footer__main{align-items:flex-start;flex-direction:column}.footer__bottom{margin-top:35px}}
 @media(max-width:430px){.hero h1{font-size:clamp(76px,16vw,94px)}.hero__buttons .btn{width:100%}.hero__image-wrap{height:305px}.hero__sticker{width:80px;height:80px;font-size:16px}.hero__image-badge{padding:10px}.category-card{min-height:240px}.category-card h3{font-size:28px}.category-card__top{font-size:7px}.feature h3{font-size:30px}.events-copy h2{font-size:113px}.instagram-card h3{font-size:64px}.closing h2{font-size:78px}.closing__inner>a{bottom:-40px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+
+/* Refinements: authentic logo, consistent category grid and event calendar */
+.brand__original{display:flex;align-items:center;justify-content:center;width:145px;height:65px;overflow:hidden;flex-shrink:0}
+.brand__original img{display:block;max-height:100%;max-width:100%;width:auto;height:auto;object-fit:contain}
+.category-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.category-card{grid-column:auto!important;min-width:0;min-height:390px;border-radius:19px;padding:22px}
+.category-card__image{top:57px;bottom:87px;left:24px;right:24px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.category-card__image:before{content:none}
+.category-card__image img{width:100%;max-width:310px;height:100%;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(0 10px 10px rgba(39,29,40,.13))}
+.category-card__image.image-unavailable{background:rgba(255,255,255,.35);border-radius:13px}
+.category-card__image.image-unavailable:after{content:'Produktbild derzeit nicht verfügbar';text-align:center;max-width:160px;font:800 12px/1.6 var(--body);color:#514a5a;position:absolute}
+.category-card__bottom{background:linear-gradient(180deg,transparent,#fff5 80%);border-radius:10px;padding-top:10px}
+.category-card h3{font-size:47px;word-break:normal}
+.category-card__link{font-size:9px;line-height:1.5;min-width:85px}
+.category-card--pokemon{background:#f6e18f}
+.category-card--onepiece{background:#c1e7e5}
+.category-card--yugioh{background:#e2d7fa}
+.category-card--magic{background:#f7d0bd}
+.category-card--digimon{background:#d2eac7}
+.category-card--diddl{background:#f4d6e9}
+.upcoming-section{padding:100px 0;background:#fff;scroll-margin-top:85px}
+.upcoming-intro{display:flex;justify-content:space-between;align-items:end;gap:26px;margin-bottom:26px}
+.upcoming-intro h2{font-family:var(--display);font-weight:900;letter-spacing:-.03em;font-size:clamp(65px,7.7vw,112px);line-height:.88;margin:20px 0 0}
+.upcoming-intro h2 em{font-style:normal;color:var(--purple)}
+.events-calendar-info{display:flex;align-items:center;gap:26px;background:#f1eafe;border:1px solid #e0d4ff;border-radius:20px;padding:30px}
+.events-calendar-info__icon{font-size:65px;line-height:1;color:var(--purple)}
+.events-calendar-info>div{flex:1}
+.events-calendar-info strong{font:900 33px/1 var(--display)}
+.events-calendar-info p{font-size:13px;line-height:1.75;color:#65616f;margin:11px 0 0;max-width:530px}
+.events-calendar-info .btn{flex-shrink:0}
+.calendar-embed{padding:15px;background:#f7f5fc;border-radius:15px;margin-top:15px}
+.calendar-embed p{font-size:11px;color:#696576;line-height:1.5;margin:0 0 10px}
+.calendar-embed iframe{display:block;width:100%;height:570px;border:1px solid #e3ddf0;border-radius:12px;background:white}
+.event-feed-footer{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:19px 0 0;font-size:11px;color:#777380;line-height:1.65}
+.event-feed-footer>a{color:var(--purple);font-weight:900;white-space:nowrap}
+@media(max-width:1000px){.category-card{min-height:325px}.category-card h3{font-size:37px}.category-card__image{top:46px;bottom:77px;left:12px;right:12px}.category-card__link{display:none}.upcoming-section{padding:80px 0}.events-calendar-info{flex-wrap:wrap}.events-calendar-info .btn{width:100%}}
+@media(max-width:740px){.brand__original{width:135px;height:57px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.category-card{grid-column:auto!important;min-height:285px;padding:13px}.category-card__image{top:38px;bottom:68px;left:8px;right:8px}.category-card h3{font-size:34px}.category-card__bottom small,.category-card__top{font-size:8px}.upcoming-section{padding:65px 0}.upcoming-intro{flex-direction:column;align-items:start}.upcoming-intro h2{font-size:70px}.events-calendar-info{padding:22px;gap:14px}.events-calendar-info__icon{font-size:38px}.events-calendar-info strong{font-size:27px}.event-feed-footer{flex-direction:column;align-items:start;gap:12px}.event-feed-footer>a{white-space:normal}}
+@media(max-width:420px){.category-card{min-height:243px}.category-card h3{font-size:29px}.category-card__image{bottom:60px}.upcoming-intro h2{font-size:57px}}
