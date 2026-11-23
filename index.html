@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f8f7f2">
+<meta name="theme-color" content="#fffaf3">
 <meta name="description" content="DufBros – dein freundlicher Local TCG Store in Mannheim. Pokémon, Yu-Gi-Oh!, Magic, One Piece, Digimon, Diddl, Turniere und Sammelkarten-Community.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="DufBros – Dein Local TCG Store in Mannheim">
@@ -54,7 +54,7 @@
     <div class="container hero__grid">
       <div class="hero__copy">
         <div class="pill"><span class="pill__spark">✳</span> MAN SIEHT SICH IM STORE!</div>
-        <h1 id="hero-title">DEIN SPOT<br>FÜR <span>GROSSE<br>PULLS.</span></h1>
+        <h1 id="hero-title" class="hero__title"><span class="hero__line">DEIN SPOT</span><span class="hero__line hero__line--accent">FÜR GROSSE</span><span class="hero__line">PULLS<span class="hero__point">.</span></span></h1>
         <p class="hero__intro">Pokémon, One Piece, Yu-Gi-Oh!, Magic & mehr. Entdecke neue Karten, triff deine Community und erlebe echte TCG-Momente – mitten in Mannheim.</p>
         <div class="hero__buttons">
           <a href="#besuch" class="btn btn--purple">Besuch uns im Store <span aria-hidden="true">↗</span></a>
@@ -92,14 +92,20 @@
       <div class="event-feed" id="event-feed">
         <div class="events-calendar-info">
           <span class="events-calendar-info__icon" aria-hidden="true">✳</span>
-          <div><strong>Die nächsten Locals & Turniere</strong><p>Die aktuelle Veranstaltungsübersicht von DufBros liegt auf TCGevents. Du kannst sie hier einblenden oder direkt auf TCGevents öffnen.</p></div>
-          <button class="btn btn--purple" type="button" id="load-tcg-calendar">Kalender hier anzeigen <span aria-hidden="true">↗</span></button>
+          <div><strong>Die nächsten Locals & Turniere</strong><p>Entdecke die kommenden Events von DufBros. Der offizielle TCGevents-Kalender wird direkt hier geladen.</p></div>
+          <a class="btn btn--purple" href="https://tcgevents.net/profile/17413627470044" target="_blank" rel="noopener noreferrer">Zur Anmeldung <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="calendar-embed" id="calendar-embed" hidden>
-          <p>Falls TCGevents die Einbettung technisch blockiert, öffne den Kalender über den Link darunter.</p>
+        <div class="calendar-embed" id="calendar-embed">
+          <iframe src="https://tcgevents.net/profile/17413627470044"
+            title="DufBros – aktuelle Turniere und Termine auf TCGevents"
+            loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <div class="calendar-embed__fallback">
+            <p>Kalender nicht sichtbar? TCGevents kann die Einbettung auf fremden Websites verhindern.</p>
+            <a href="https://tcgevents.net/profile/17413627470044" target="_blank" rel="noopener noreferrer">DufBros-Kalender direkt öffnen ↗</a>
+          </div>
         </div>
       </div>
-      <div class="event-feed-footer"><span>Bei einer erlaubten Einbettung zeigt TCGevents seine aktualisierte Profilseite. Eine direkte Event-Datenschnittstelle ist noch nicht bestätigt.</span><a href="https://www.tcgevents.net/profile/17413627470044" target="_blank" rel="noopener noreferrer">Zum aktuellen Turnierkalender ↗</a></div>
+      <div class="event-feed-footer"><span>Die Termine stammen von TCGevents. Verbindlich sind die Angaben auf der Veranstalterseite.</span><a href="https://tcgevents.net/profile/17413627470044" target="_blank" rel="noopener noreferrer">Zum vollständigen Turnierkalender ↗</a></div>
     </div>
   </section>
 
